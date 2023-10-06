@@ -1,0 +1,55 @@
+@import '../utils/variables';
+
+.buttonsBar__btn {
+  background-color: $background-bodycolor;
+  color: $text-primary-color;
+  font-family: $primary-fontFamily;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.8rem;
+  transition: background 0.25s $cubic-bezier, box-shadow 0.25s $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $color-white-100;
+    background: $skyblue-color;
+    box-shadow: 0rem 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.12);
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.buttonsBar__btn:nth-child(1) {
+  padding: 0.6rem 1.75rem;
+}
+
+.buttonsBar__btn:nth-child(2) {
+  padding: 0.6rem 2.4rem;
+}
+
+.buttonsBar__btn:nth-child(3) {
+  padding: 0.6rem 2.35rem;
+}
+
+.buttonsBar__btn:nth-child(4) {
+  padding: 0.6rem 2.55rem;
+}
+
+.buttonsBar__btn:nth-child(5) {
+  padding: 0.6rem 2.35rem;
+}
+
+.buttonsBar__list {
+  @include flex('', center, '');
+  margin: 0;
+}
+
+.buttonsBar {
+  padding: 9.4rem 0 0 0;
+}

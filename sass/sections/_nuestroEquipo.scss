@@ -1,0 +1,46 @@
+@import '../utils/variables';
+
+.teams {
+  padding-bottom: 5.5rem;
+  background-color: $background-bodycolor;
+
+  .teams__title {
+    @extend .services__title;
+  }
+
+  .teams__text {
+    color: $text-secondary-color;
+    font-weight: 400;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    padding: 1rem 0 1.6rem 0;
+    margin: 0;
+  }
+}
+
+.teams__list {
+  @include flex(row, space-evenly, '');
+
+  .teams__item {
+    flex-basis: calc(22.5%);
+    text-align: center;
+    background-color: $color-white-100;
+    padding-bottom: 3rem;
+    border-radius: 0 0 0.4rem 0.4rem;
+    box-shadow: 0rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+  }
+}
+
+.teams__item--effect {
+  &:hover {
+    /* transform: translateY(-3%);*/
+    box-shadow: 0rem 0.35rem 1.5rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+.teams__title-member {
+  font-weight: 500;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  padding-top: 3rem;
+}

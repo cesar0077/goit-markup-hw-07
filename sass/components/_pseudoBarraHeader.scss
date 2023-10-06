@@ -1,0 +1,10 @@
+.navbar__link--current::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.4rem;
+  background-color: $skyblue-color;
+  top: 4.48rem;
+  left: 0rem;
+  border-radius: 0.2rem;
+}

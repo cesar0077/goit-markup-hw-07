@@ -1,0 +1,19 @@
+@import '../utils/variables';
+
+.header__logo {
+  text-decoration: none;
+  font-family: $secondary-fontFamily;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $skyblue-color;
+  display: block;
+  margin: 0 9.3rem 0 0;
+  padding: 0rem;
+
+  &:focus {
+    color: $skyblue-color;
+    outline: none;
+  }
+}

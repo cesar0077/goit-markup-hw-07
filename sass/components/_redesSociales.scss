@@ -1,0 +1,47 @@
+@import '../utils/variables';
+
+.socialNetwork {
+  @include flex('', center, '');
+  gap: 1rem;
+  padding: 0;
+  margin-top: 2rem;
+
+  .socialNetwork__link--effects:focus,
+  .socialNetwork__link--effects:focus .socialNetwork__icon {
+    fill: $color-white-100;
+    background: $skyblue-color;
+    outline: none;
+  }
+}
+
+.socialNetwork__link {
+  position: relative;
+  display: block;
+  @include flex(row, center, center);
+  border-radius: 5rem;
+  height: 4.4rem;
+  width: 4.4rem;
+  transition: background 0.25s $cubic-bezier;
+
+  &:hover {
+    background: $skyblue-color;
+  }
+}
+
+.socialNetwork__icon--footer {
+  fill: white !important;
+}
+
+.socialNetwork__icon {
+  transition: fill 0.25s $cubic-bezier;
+  fill: $text-secondary-color;
+}
+
+.socialNetwork__icon--move {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+.socialNetwork__link--effects:hover .socialNetwork__icon {
+  fill: #fff;
+}

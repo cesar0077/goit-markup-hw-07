@@ -1,0 +1,47 @@
+@import '../utils/variables';
+@import './tecnologias';
+
+.mission {
+  padding: 9.4rem 0 0 0;
+
+  .mission__list {
+    @include flex(row, space-evenly, '');
+    margin: 0;
+  }
+}
+
+.mission__item {
+  flex-basis: calc(22.5%);
+
+  .mission__title {
+    color: $text-primary-color;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    padding-top: 3rem;
+  }
+
+  .mission__text {
+    color: $text-secondary-color;
+    font-size: 1.4rem;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+  }
+}
+
+.mission__link {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2.5rem 0;
+  background: rgba(245, 244, 250, 1);
+  margin-bottom: 3rem;
+  margin: 0 auto;
+
+  &:focus {
+    border: 0.1rem solid $skyblue-color;
+    outline: none;
+  }
+}

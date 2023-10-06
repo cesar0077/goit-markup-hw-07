@@ -1,0 +1,37 @@
+@import '../utils/variables';
+@import './tecnologias';
+
+.customers__list {
+  @include flex(row, space-between, center);
+  margin: 0;
+  padding-bottom: 8.2rem;
+}
+
+.customers__title {
+  @extend .services__title;
+}
+
+.customers__item {
+  padding: 1.09rem 3.2rem;
+  fill: #afb1b8;
+  border: 0.1rem solid #afb1b8;
+  border-radius: 0.4rem;
+  transition: border 0.25s $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    fill: $skyblue-color;
+    border: 1px solid $skyblue-color;
+    outline: none;
+  }
+
+  &:hover .customers__icon,
+  &:focus .customers__icon {
+    fill: $skyblue-color;
+    outline: none;
+  }
+}
+
+.customers__icon {
+  transition: fill 0.25s $cubic-bezier;
+}

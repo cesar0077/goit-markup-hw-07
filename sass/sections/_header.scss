@@ -1,0 +1,86 @@
+@import '../utils/variables';
+
+.header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 1.4805rem 0rem;
+}
+
+.navbar {
+  margin-right: 31.4rem;
+
+  .navbar__link {
+    position: relative;
+    color: $text-primary-color;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-right: 3rem;
+
+    &:focus {
+      color: $skyblue-color;
+      outline: none;
+    }
+  }
+}
+
+.navbar__link--current {
+  color: $skyblue-color;
+}
+
+.contact {
+  @include flex(row, center, center);
+
+  .contact__link {
+    color: $text-secondary-color;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-right: 5rem;
+    .contact__icon {
+      fill: $text-secondary-color;
+    }
+  }
+}
+
+.contact__link {
+  transition: color 0.25s $cubic-bezier;
+  .contact__info {
+    margin-left: 1rem;
+  }
+
+  &:hover {
+    color: $skyblue-color;
+  }
+
+  &:last-of-type {
+    margin: 0 0 0 3rem;
+  }
+}
+
+.contact__link--current {
+  &:focus {
+    color: $skyblue-color;
+    outline: none;
+  }
+  &:hover .contact__icon,
+  &:focus .contact__icon {
+    fill: $skyblue-color;
+    outline: none;
+  }
+}
+
+.navbar__list {
+  @include flex(row, center, center);
+
+  .navbar__link {
+    transition: color 0.25s $cubic-bezier;
+
+    &:hover {
+      color: $skyblue-color;
+    }
+  }
+}

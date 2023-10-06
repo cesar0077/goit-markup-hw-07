@@ -1,0 +1,40 @@
+@import '../utils/variables';
+
+.services {
+  padding-bottom: 9.4rem;
+
+  .services__list {
+    @include flex(row, space-between, '');
+    margin: 0;
+  }
+}
+
+.services__title {
+  color: $text-primary-color;
+  font-weight: 700;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 5.5rem 0;
+}
+
+.services__item {
+  position: relative;
+
+  .services__text {
+    position: absolute;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $color-white-100;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 36.9rem;
+    height: 7rem;
+    top: 22.4rem;
+    margin: 0rem;
+  }
+}
+.services__text {
+  @include flex(row, center, center);
+}
