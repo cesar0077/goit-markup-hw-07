@@ -5,10 +5,9 @@
   @include flex(row, space-between, center);
   margin: 0;
   padding-bottom: 8.2rem;
-}
-
-.customers__title {
-  @extend .services__title;
+  .customers__icon {
+    transition: fill 0.25s $cubic-bezier;
+  }
 }
 
 .customers__item {
@@ -32,6 +31,6 @@
   }
 }
 
-.customers__icon {
-  transition: fill 0.25s $cubic-bezier;
+.customers__title {
+  @extend .services__title;
 }

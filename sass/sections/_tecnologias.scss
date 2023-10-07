@@ -7,15 +7,18 @@
     @include flex(row, space-between, '');
     margin: 0;
   }
-}
 
-.services__title {
-  color: $text-primary-color;
-  font-weight: 700;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
-  text-align: center;
-  padding: 5.5rem 0;
+  .services__title {
+    color: $text-primary-color;
+    font-weight: 700;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 5.5rem 0;
+  }
+  .services__text {
+    @include flex(row, center, center);
+  }
 }
 
 .services__item {
@@ -34,7 +37,4 @@
     top: 22.4rem;
     margin: 0rem;
   }
-}
-.services__text {
-  @include flex(row, center, center);
 }

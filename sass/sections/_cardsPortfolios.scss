@@ -50,21 +50,18 @@
 }
 
 .cards__item {
-  &:hover .cards__text {
-    cursor: pointer;
-    transform: translateY(-100%);
-  }
-}
-
-.cards__item {
-  &:hover {
-    /*transform: translateY(-3%);*/
-    box-shadow: 0rem 0.35rem 1.5rem rgba(0, 0, 0, 0.2);
-  }
   .cards__title {
     margin: 3rem 2rem 1.5rem 2.4rem;
   }
   .cards__textDesign {
     margin: 0 0 2rem 2.4rem;
+  }
+  &:hover {
+    /*transform: translateY(-3%);*/
+    box-shadow: 0rem 0.35rem 1.5rem rgba(0, 0, 0, 0.2);
+  }
+  &:hover .cards__text {
+    cursor: pointer;
+    transform: translateY(-100%);
   }
 }

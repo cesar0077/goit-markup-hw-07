@@ -18,16 +18,15 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     margin-right: 3rem;
+    .navbar__link--current {
+      color: $skyblue-color;
+    }
 
     &:focus {
       color: $skyblue-color;
       outline: none;
     }
   }
-}
-
-.navbar__link--current {
-  color: $skyblue-color;
 }
 
 .contact {

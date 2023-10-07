@@ -1,8 +1,8 @@
 @import '../utils/variables';
 
 .footer__logo--address {
-  padding: 3rem 0 1rem 0;
   @extend .header__logo;
+  padding: 3rem 0 1rem 0;
 
   &:focus {
     transform: scale(1.03);
